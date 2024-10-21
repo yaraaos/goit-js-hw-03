@@ -1,11 +1,11 @@
 /* Задача 1. Генератор slug */
 
 function slugify(title) {
-    const lowerTitle = title.toLowerCase();
-    const slugArr = lowerTitle.split(" ");
-    const slug = slugArr.join("-");
+    const slug = title.split(' ');
+    const joinedSlug = slug.join('-');
+    const lowerSlug = joinedSlug.toLowerCase();
 
-return slug;   
+    return lowerSlug;
 }
 
 

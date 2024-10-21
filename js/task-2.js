@@ -1,13 +1,13 @@
 /* Задача 2. Композиція масивів */
 
 function makeArray(firstArray, secondArray, maxLength) {
-    const combinedArr = firstArray.concat(secondArray);
+    const newArr = firstArray.concat(secondArray);
 
-    if (combinedArr.length > maxLength) {
-        return combinedArr.slice(0, maxLength);
-    } else {
-        return combinedArr;
+    if (newArr.length > maxLength) {
+        return newArr.slice(0, maxLength);
     }
+    
+    return newArr;
 }
 
 

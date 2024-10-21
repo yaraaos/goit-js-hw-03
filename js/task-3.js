@@ -1,16 +1,16 @@
 /* Задача 3. Фільтрація масиву чисел */
 
 function filterArray(numbers, value) {
-    const bigger = [];
+    const newArr = [];
 
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] > value) {
-            bigger.push(numbers[i]);
+    for (const num of numbers) {
+        if (num > value) {
+            newArr.push(num);
         }
     }
-    return bigger;
-}
 
+    return newArr;
+}
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
 console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
 console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
